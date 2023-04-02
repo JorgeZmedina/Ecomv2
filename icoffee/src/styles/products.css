@@ -1,0 +1,40 @@
+h1{
+    display: inline-block;
+    font-size: 40px;
+
+}
+
+.main-products {
+    /* box-sizing: border-box;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* This will create 3 equal columns*/
+    grid-template-rows: repeat(4, 38rem); /* This will create 4 rows with a fixed height of 200px */
+    grid-gap: 1rem;
+  }
+
+
+  .pics{
+    height: 16rem;
+    width: 18rem;
+  }
+
+
+  .product{
+  background-color: rgba(222, 184, 138, 0.9);;
+    height: fit-content;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 100%; /* This will set the width of each grid item to be 100% of the available space */
+    height: 100%; /* This will set the height of each grid item to be 100% of the available space */
+  }
+
+  .price {
+    word-spacing: 1px;
+  }

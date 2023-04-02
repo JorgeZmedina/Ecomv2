@@ -1,0 +1,171 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    /* height: 100vh; */
+    box-sizing: border-box;
+
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial';
+    letter-spacing: 3px;
+    background-color: rgb(227, 205, 175)
+  }
+
+
+a {
+    text-decoration: none;
+    color: rgb(60, 45, 19);
+}
+
+a:hover {
+    color: rgb(118, 94, 52);
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+
+img {
+    height: 5rem;
+    width: 5rem;
+}
+
+
+/* cart stuff */
+.cart {
+    float: right;
+    padding: 1rem;
+}
+
+
+.cart img {
+    height: 3.5rem;
+    width: auto;
+    border-radius: 0.5rem;
+}
+
+
+/* body {
+    text-align: center;
+    background: url("images/Screen Shot 2023-01-10 at 10.08.30 PM.png")no-repeat center center/cover;
+
+} */
+
+
+p, h1, h2 {
+    padding: 2rem;
+}
+h5 {
+    display: none;
+}
+
+
+h6 {
+    padding: 0.5rem;
+}
+
+/* Home page */
+.title {
+    margin-top: 20px;
+}
+
+
+.action {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: alt(img1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 18s infinite ease-in-out;
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+
+.content a {
+    background: rgba(0, 181, 122, 0.3);
+    padding: 8.25px 24px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 20px;
+}
+
+
+.content a:hover {
+    background: rgb(70, 181, 122);
+    color: antiquewhite;
+}
+
+
+/* @keyframes change {
+    0%
+    {
+        background-image: url(images/slide2pwhc.png);
+    }
+    20%
+    {
+        background-image: url(images/slide3twhc.png);
+    }
+    40%
+    {
+        background-image: url(images/slide4hc.png);
+    }
+    60%
+    {
+        background-image: url(images/mccf.png);
+    }
+    80%
+    {
+        background-image: url(images/pfbb.png);
+    }
+    100%
+    {
+        background-image: url(images/Pwcmfbb.png);
+    }
+} */
+
+@keyframes change {
+    0%
+    {
+        background-image: 'public/images/Dragondrink.png' ;
+    }
+    20%
+    {
+        background-image: 'public/images/Dragondrink.png';
+    }
+    40%
+    {
+        background-image: 'public/images/Dragondrink.png';
+    }
+    60%
+    {
+        background-image: 'public/images/Dragondrink.png';
+    }
+    80%
+    {
+        background-image: 'public/images/Dragondrink.png';
+    }
+    100%
+    {
+        background-image: image('public/images/StrawberryAçaí.png');
+    }
+}

@@ -1,0 +1,41 @@
+label{
+    display: block;
+    font-size: 25px;
+    margin: 10px;
+}
+
+
+.contact__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.main__contact{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: grey;
+
+}
+
+textarea{
+    width: 100%;
+    padding: 3rem;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: grey;
+
+}
