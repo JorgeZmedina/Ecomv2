@@ -5,7 +5,7 @@ function Footer () {
     
     return (
         <div>
-         <footer>
+         <footer className="footr">
         <p className="copy">&copy;Jorge Zeledon-Medina</p>
 
         <section className="footr" id="footer"><h5>l</h5>

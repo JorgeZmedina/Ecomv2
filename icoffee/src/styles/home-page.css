@@ -88,8 +88,14 @@ h6 {
     background-size: cover;
     text-align: center;
     justify-content: center;
+    background-image: url(public/images/slide1pch.png);
     animation: change 18s infinite ease-in-out;
 }
+@media (prefers-reduced-motion: no-preference) {
+    .action {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
 
 
 .content {
@@ -117,55 +123,22 @@ h6 {
 
 
 /* @keyframes change {
-    0%
-    {
-        background-image: url(images/slide2pwhc.png);
+    0% {
+      background-image: url(/images/slide2pwhc.png);
     }
-    20%
-    {
-        background-image: url(images/slide3twhc.png);
+    20% {
+      background-image: url(/images/slide3twhc.png);
     }
-    40%
-    {
-        background-image: url(images/slide4hc.png);
+    40% {
+      background-image: url(/images/slide4hc.png);
     }
-    60%
-    {
-        background-image: url(images/mccf.png);
+    60% {
+      background-image: url(/images/mccf.png);
     }
-    80%
-    {
-        background-image: url(images/pfbb.png);
+    80% {
+      background-image: url(/images/pfbb.png);
     }
-    100%
-    {
-        background-image: url(images/Pwcmfbb.png);
+    100% {
+      background-image: url(/images/Pwcmfbb.png);
     }
-} */
-
-@keyframes change {
-    0%
-    {
-        background-image: 'public/images/Dragondrink.png' ;
-    }
-    20%
-    {
-        background-image: 'public/images/Dragondrink.png';
-    }
-    40%
-    {
-        background-image: 'public/images/Dragondrink.png';
-    }
-    60%
-    {
-        background-image: 'public/images/Dragondrink.png';
-    }
-    80%
-    {
-        background-image: 'public/images/Dragondrink.png';
-    }
-    100%
-    {
-        background-image: image('public/images/StrawberryAçaí.png');
-    }
-}
+  } */

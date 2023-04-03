@@ -4,14 +4,14 @@ import Cards from '../components/cards'
 
 const losProducts = () => {
     return(
-        <div>
+        <>
             <h1>Los Productos!!</h1>
             <div className="main-products">
             <Cards />
             <Cards />
             <Cards />
             </div>
-        </div>
+        </>
     )
 }
 

@@ -24,9 +24,17 @@ function Header () {
 
     return (
         <div>
+          <div className="logo animate__animated animate__pulse"><Link to="/"><img src="images/logo.png" alt="logo" class="logo"></img></Link></div>
+
+          <article class="cart"><h5>l</h5>
+    <a href="">
+    <Link to="/Cart">
+        <img src="images/cart.jpeg" alt="cart"></img></Link>
+    </a>
+</article>
          <nav>
             <button className="hamburger" onClick={toggleHamburger}><img src="images/hamburger.png" alt="hamburger" id="hamburger"/></button>
-            <article id="menuToggle"><h5>l</h5>
+            <article id="menuToggle">
               <ul id="menu">
                 <li><Link to="/"> Home </Link></li>
                 <li><Link to="/products"> Products </Link></li>
@@ -36,6 +44,6 @@ function Header () {
           </nav>
         </div>
     )
-}
+};
 
 export default Header;
