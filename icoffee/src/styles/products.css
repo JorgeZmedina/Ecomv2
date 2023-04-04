@@ -1,40 +1,91 @@
-h1{
-    display: inline-block;
-    font-size: 40px;
-
+/* body {
+  background-color: black;
+  background-image: url(https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHZlcnklMjBuaWNlJTIwaGlnaCUyMHF1YWxpdHklMjBiYWNrZ3JvdW5kfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60);
+} */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  background-color: black;
 }
-
-.main-products {
-    /* box-sizing: border-box;
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem; */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* This will create 3 equal columns*/
-    grid-template-rows: repeat(4, 38rem); /* This will create 4 rows with a fixed height of 200px */
-    grid-gap: 1rem;
+.products-container>div {
+  flex-basis: 30%;
+  background-color: rgba(49, 49, 54, 0.993);
+  ;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgb(254, 254, 254);
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.products-container img {
+  max-width: 100%;
+}
+.products-container h2 {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: white;
+}
+.products-container p {
+  margin-top: 30px;
+  font-size: 1rem;
+  color: white;
+}
+.products-container span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+.producthead {
+  padding-top: 50px;
+  color: white;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.producthead h1 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.product-item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  /* to make sure the images maintain their aspect ratio */
+}
+/* Make grid contain less columns and more rows everytime screen is made smaller*/
+@media screen and (max-width: 1024px) {
+  .products-container>div {
+      flex-basis: 18rem;
+      margin: 25px;
   }
-
-
-  .pics{
-    height: 16rem;
-    width: 18rem;
+}
+@media screen and (max-width: 768px) {
+  .products-container>div {
+      flex-basis: 19rem;
+      margin: 30px;
   }
-
-
-  .product{
-  background-color: rgba(222, 184, 138, 0.9);;
-    height: fit-content;
-    border-radius: 5px;
-    overflow: hidden;
-    text-align: center;
-    box-sizing: border-box;
-    border: 2px solid black;
-    width: 100%; /* This will set the width of each grid item to be 100% of the available space */
-    height: 100%; /* This will set the height of each grid item to be 100% of the available space */
+}
+@media screen and (max-width: 425px) {
+  .products-container {
+      justify-content: space-between;
+      padding: 20px;
   }
-
-  .price {
-    word-spacing: 1px;
+  .products-container>div {
+      flex-basis: 19rem;
+      margin: 25px 0;
   }
+}
+@media screen and (max-width: 320px) {
+  .products-container>div {
+      flex-basis: 270px;
+      margin: 20px 0;
+  }
+}

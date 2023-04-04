@@ -32,7 +32,7 @@
   from {
     transform: rotate(0deg);
   }
-  to {
+  50% {
     transform: rotate(180deg);
   }
   to {
