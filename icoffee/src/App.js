@@ -1,17 +1,23 @@
 import './App.css';
-// import Header from './components/Header'
-// import HomePage from './pages/HomePage';
-// import Footer from './components/Footer'
-
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './pages/Layout';
+import HomePage from './pages/HomePage';
+import Products from './pages/Products';
+import Contact from './pages/Contact';
+import './App.css';
+export const AppContext = React.createContext();
 function App() {
   return (
-    
-    <div className="App">
-      {/* <Header />
-      <HomePage/>
-      <Footer/> */}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/products" element={<Products />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;
