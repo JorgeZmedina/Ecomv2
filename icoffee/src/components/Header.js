@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/header.css'
 import { BrowserRouter, Route, Link } from "react-router-dom";
+// import Cart from "../pages/Cart";
 
 function Header () {
   const toggleHamburger = () => {
@@ -28,8 +29,8 @@ function Header () {
           <div className="logo animate__animated animate__pulse"><Link to="/"><img src="images/logo.png" alt="logo" class="logo"></img></Link></div>
 
           <article class="cart"><h5>l</h5>
-    <a href="">
-    <Link to="/Cart">
+      <a href="">
+      <Link to="/Cart">
         <img src="images/cart.jpeg" alt="cart"></img></Link>
     </a>
 </article>

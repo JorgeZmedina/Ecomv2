@@ -16,8 +16,6 @@ function HomePage () {
          <Link to="/products"><button className="title4 buttonH">Buy</button></Link>
         <Background />
         </main>
-
-
     )
 }
 
