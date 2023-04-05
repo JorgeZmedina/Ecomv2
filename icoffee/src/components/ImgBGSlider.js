@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import "../styles/imgBGSlider.css";
 
 const ImgBGSlider= () => {
- const img1 = './images/slide1pch.png'
+ const img1 = 'images/slide1pch.png'
  const img2 = './images/slide2pwhc.png'
  const img3 = './images/slide3twhc.png'
  const img4 = './images/slide4hc.png'

@@ -46,9 +46,12 @@
 // };
 // export default Products;
 import React from "react";
+import ArrayCard from "../components/ArrayCard";
 const Products = () => {
     return (
-        <h1>Products Page</h1>
+        <div>
+            <ArrayCard/>
+        </div>
     );
 };
 export default Products;
