@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/http//:JorgeZmedina.github.io/Ecomv2/static/css/main.02111f8a.css",
+    "main.js": "/http//:JorgeZmedina.github.io/Ecomv2/static/js/main.578ea395.js",
+    "index.html": "/http//:JorgeZmedina.github.io/Ecomv2/index.html",
+    "main.02111f8a.css.map": "/http//:JorgeZmedina.github.io/Ecomv2/static/css/main.02111f8a.css.map",
+    "main.578ea395.js.map": "/http//:JorgeZmedina.github.io/Ecomv2/static/js/main.578ea395.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02111f8a.css",
+    "static/js/main.578ea395.js"
+  ]
+}
