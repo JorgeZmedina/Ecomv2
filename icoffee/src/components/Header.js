@@ -24,6 +24,7 @@ function Header () {
 
     return (
         <div>
+          {/* <img className="img2" src="images/bgg.png" alt="img2"></img> */}
           <div className="logo animate__animated animate__pulse"><Link to="/"><img src="images/logo.png" alt="logo" class="logo"></img></Link></div>
 
           <article class="cart"><h5>l</h5>

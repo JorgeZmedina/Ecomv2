@@ -23,12 +23,13 @@ nav {
     padding: 0.5rem;
     position: static;
     text-align: left;
+    /* z-index: -2; */
     
 }
 
 nav li {
     display: inline;
-    padding: 5px 2px 0.1rem 1px;
+    padding: 7px 3px 0.4rem 2px;
     margin: 25px 30px 2rem 15px;
     float: left;
 }
@@ -43,6 +44,15 @@ nav li:hover {
     background-color: rgba(249, 191, 119, 0.5);
     border-radius: 8px;
 }
+/* background image */
+/* .img2 {
+    position: absolute;
+    margin: 0;
+    width: -webkit-fill-available;
+    display: initial;
+    z-index: -1;
+    height: -webkit-fill-available;
+  } */
 
 @media screen and (max-width:800px) {
     #menuToggle {

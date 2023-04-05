@@ -2,9 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    /* height: 100vh; */
     box-sizing: border-box;
-
 }
 
 
@@ -22,9 +20,9 @@ a {
     color: rgb(60, 45, 19);
 }
 
-a:hover {
+/* a:hover {
     color: rgb(118, 94, 52);
-}
+} */
 
 
 ul {
@@ -47,18 +45,10 @@ img {
 
 
 .cart img {
-    height: 3.5rem;
+    height: 4rem;
     width: auto;
     border-radius: 0.5rem;
 }
-
-
-/* body {
-    text-align: center;
-    background: url("images/Screen Shot 2023-01-10 at 10.08.30 PM.png")no-repeat center center/cover;
-
-} */
-
 
 p, h1, h2 {
     padding: 2rem;
@@ -74,11 +64,57 @@ h6 {
 
 /* Home page */
 .title {
-    margin-top: 20px;
+  position: absolute;
+  top: 51%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
 }
 
+.title2 {
+  position: absolute;
+  top: 60%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  text-transform: uppercase;
+}
 
-.action {
+.title3 {
+  position: absolute;
+  top: 65%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+
+}
+
+.title4 {
+  position: absolute;
+  top: 70%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.buttonH {
+  background: rgba(0, 181, 122, 0.3);
+  padding: 0.2rem 1rem;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 20px;
+}
+
+.buttonH:hover {
+  background: rgb(70, 181, 122);
+  color: antiquewhite;
+}
+
+/* .action {
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -87,25 +123,9 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    justify-content: center;
-    /* background-image: url(public/images/slide1pch.png); */
-    animation: change 18s infinite ease-in-out;
-}
-@media (prefers-reduced-motion: no-preference) {
-    .action {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-}
-
+    justify-content: center; */
+    /* animation: change 18s infinite ease-in-out; */
+/* } */
 
 .content a {
     background: rgba(0, 181, 122, 0.3);
@@ -120,25 +140,3 @@ h6 {
     background: rgb(70, 181, 122);
     color: antiquewhite;
 }
-
-
-/* @keyframes change {
-    0% {
-      background-image: url(/images/slide2pwhc.png);
-    }
-    20% {
-      background-image: url(/images/slide3twhc.png);
-    }
-    40% {
-      background-image: url(/images/slide4hc.png);
-    }
-    60% {
-      background-image: url(/images/mccf.png);
-    }
-    80% {
-      background-image: url(/images/pfbb.png);
-    }
-    100% {
-      background-image: url(/images/Pwcmfbb.png);
-    }
-  } */

@@ -2,7 +2,9 @@ import React, { useRef, useState, useEffect } from "react";
 import axios from "axios";
 // import "../styles/products.css";
 // import ShoppingCart from "./ShoppingCart";
-import "../styles/filter.css";
+// import "../styles/filter.css";
+function thankyou () {
+    alert("Added To Cart :)")}
 const Search = () => {
     const [search, setSearch] = useState("");
     const [products, setProducts] = useState([]);
@@ -25,7 +27,7 @@ const Search = () => {
         fetchAllProducts();
     }, []);
     const [minPrice, setMinPrice] = useState(0);
-    const [maxPrice, setMaxPrice] = useState(500);
+    const [maxPrice, setMaxPrice] = useState(50);
     useEffect(() => {
         const filtered = products.filter((product) => {
             const titleMatch = product.title.toLowerCase().includes(search.toLowerCase());
@@ -41,7 +43,7 @@ const Search = () => {
                 <input
                     ref={inputRef}
                     onChange={handleChange}
-                    placeholder="Find a Fragrance"
+                    placeholder="Search Favorite Drink"
                     type="text"
                 />
             </div>
@@ -49,14 +51,14 @@ const Search = () => {
                 <label>Min Price:</label>
                 <input
                     type="number"
-                    value={minPrice}
+                    value={minPrice} 
                     onChange={(e) => setMinPrice(Math.max(0, e.target.value))}
                 />
                 <label>Max Price:</label>
                 <input
                     type="number"
-                    value={maxPrice}
-                    onChange={(e) => setMaxPrice(Math.min(500, e.target.value))}
+                    value={maxPrice} 
+                    onChange={(e) => setMaxPrice(Math.min(50, e.target.value))}
                 />
             </div>
             <div className="products-container">
@@ -68,13 +70,16 @@ const Search = () => {
                                 <h2>{product.title}</h2>
                                 <p>{product.description}</p>
                                 <span className="product-price">${product.price}</span>
+                                <button className="buttonC buttonD" onClick={thankyou} type="submit" value="submit" id="Submit">Add To Cart</button>
                             </div>
                         </div>
                     ))
                 ) : (
                     <p>No products found.</p>
                 )}
+                
             </div>
+            
         </div>
     );
 };

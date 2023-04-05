@@ -39,3 +39,16 @@ textarea{
     color: grey;
 
 }
+
+.buttonC {
+    background: rgba(0, 181, 122, 0.3);
+    padding: 1rem 5rem;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 20px;
+  }
+  
+  .buttonC:hover {
+    background: rgb(70, 181, 122);
+    color: antiquewhite;
+  }

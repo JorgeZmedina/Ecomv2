@@ -1,31 +1,23 @@
 import React from "react";
 import '../styles/home-page.css';
+// import styles from '../styles/home-page.css'
 import { BrowserRouter, Route, Link } from "react-router-dom";
-// import slide1pch from './images/slide1pch.png';
-// import slide1pch from './images/slide1pch.png';
-// import Dragondrink from 'public/images/Dragondrink.png'
-
-
+import Background from "../components/ImgBGSlider";
+// import Search from "../components/Search";
 
 function HomePage () {
 
     return (
-        <div>
   
         <main>
-        <div className="action"><h5>l</h5>
-            <div className="hero content"><h5>l</h5>
-             <h2 className="animate__animated animate__zoomIn title"><strong>ICoffee         <span>Shop</span></strong></h2>
-            <p>Coffee. Perfected</p>
-            <img src="images/slide1pch.png" alt="img1"></img>
-            <img src="images/mccf.png" alt="img1"></img>
-            <h6> <Link to="/contact"> learn more</Link> </h6>
-            <h6><Link to="/products"> Buy</Link></h6>
-            </div>
-        </div>
-
+         <h1 className="title"><strong>ICOFFEE <span>SHOP</span></strong></h1>
+         <p className="title2">Coffee. Perfected</p>
+         <Link to="/contact"><button className="title3 buttonH">Learn More</button></Link>
+         <Link to="/products"><button className="title4 buttonH">Buy</button></Link>
+        <Background />
         </main>
-        </div>
+
+
     )
 }
 
