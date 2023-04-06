@@ -1,6 +1,7 @@
 import './App.css';
-import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './pages/Layout';
 import HomePage from './pages/HomePage';
 import Products from './pages/Products';
@@ -8,9 +9,11 @@ import Contact from './pages/Contact';
 import Cart from './pages/Cart';
 import './App.css';
 export const AppContext = React.createContext();
+
 function App() {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -19,7 +22,8 @@ function App() {
           <Route path="/Cart" element={<Cart />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+      </Router>
+    // </BrowserRouter>
   );
 }
 export default App;

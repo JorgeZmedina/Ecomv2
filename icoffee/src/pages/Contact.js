@@ -11,6 +11,7 @@ const Contact = () => {
 
         const email = document.getElementById("email").value;
         const emailRegex = /\S+@\S+\.\S+/;
+        //sets the requirements for the email part of the form
         if (!emailRegex.test(email)) {
             alert("Please enter a valid email address.");
             return false;

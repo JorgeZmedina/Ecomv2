@@ -11,7 +11,7 @@ function Cards() {
                 <p class="title">
                  Peppermint hot chocolate
                 </p>
-                <img class="pics" src="images/slide1pch.png" alt="Vlone Hoodie"/>
+                <img class="pics" src="images/slide1pch.png" alt="fakeSlide"/>
                 <p class="price">
                 Do you love hot chocolate? Do you love Peppermint? Why not have both! This drink always has brought strong emotions out of anyone that has tried it. With our new and bolder formula, this drink must be the next option for you.
                 </p>

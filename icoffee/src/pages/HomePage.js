@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/home-page.css';
 // import styles from '../styles/home-page.css'
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Background from "../components/ImgBGSlider";
 // import Search from "../components/Search";
 
