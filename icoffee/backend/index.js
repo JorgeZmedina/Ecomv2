@@ -43,5 +43,5 @@ app.post("/products", (req, res) => {
     });
 });
 app.listen(8800, () => {
-    console.log("Connected to backend.");
+    console.log("Connected to backend on 8800");
 });
