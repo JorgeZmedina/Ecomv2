@@ -4,7 +4,7 @@ import ProductsArray from "./ProductsArray";
 function thankyou () {
     alert("Added To Cart :)")};
 
-const ArrayCard = () => {
+const ArrayCard = ({addToCart}) => {
     const [search, setSearch] = useState("");
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
@@ -57,7 +57,7 @@ const ArrayCard = () => {
                                 <h2>{product.title}</h2>
                                 <p>{product.description}</p>
                                 <span className="product-price">${product.price}</span>
-                                <button className="buttonC buttonD" onClick={thankyou} type="submit" value="submit" id="Submit">Add To Cart</button>
+                                <button className="buttonC buttonD" onClick={ () => addToCart(product)} type="submit" value="submit" id="Submit">Add To Cart</button>
 
                             </div>
                         </div>
