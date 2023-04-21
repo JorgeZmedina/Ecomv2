@@ -26,7 +26,6 @@ const Cart = () => {
         } else {
             console.log('rending cart items')
         }
-
     }
 
     return (

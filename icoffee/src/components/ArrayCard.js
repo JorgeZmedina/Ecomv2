@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import '../styles/products.css'
 import ProductsArray from "./ProductsArray";
-function thankyou () {
-    alert("Added To Cart :)")};
+// function thankyou () {
+//     alert("Added To Cart :)")};
 
 const ArrayCard = ({addToCart}) => {
     const [search, setSearch] = useState("");

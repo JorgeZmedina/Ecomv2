@@ -14,12 +14,15 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
   const addToCart = (product) => {
     //checks to see if product is in cart. 
-      //if in cart, add another quantity plus 1
-      //if not in cart, add one 
+      //if in cart, add another quantity plus 1 : check :
+      //if not in cart, add one : check :
       //take product past, add quantity field to object, and add new object with new field into cart
+
       console.log(product)
       if (cartItems.find( item => item.id === product.id)){
-        console.log('item is already in cart')
+        console.log('adding same item to cart')
+        const sameProduct = {...product, quantity: (product.quantity + 1)}
+        setCartItems([...cartItems, sameProduct])
       } else {
         const newProduct = {...product, quantity:1}
         setCartItems([...cartItems, newProduct])
@@ -30,7 +33,6 @@ function App() {
   useEffect(() => {
     console.log(cartItems)
   },[cartItems]);
-
 
   return (
     // <BrowserRouter>
@@ -47,4 +49,5 @@ function App() {
     // </BrowserRouter>
   );
 }
+
 export default App;
